@@ -4,8 +4,20 @@
   text-align: left;
   height: 100px;
   padding: 10px;
+ /*z-index:41; aparece encima del menu lateral*/
+}
+
+#btn-menu-lateral{
+
+  backgorund: transparent;
+  border: none;
+  padding: 10;
+  cursor: pointer;
+
+
   
 }
+
 
 #panel-lateral{
 
@@ -13,7 +25,7 @@
   background-color: lightblue;
   
   position: fixed;
-  right: 0;
+  left: 0;
   z-index: 40;
   
   height: 100vh;
@@ -21,10 +33,29 @@
 }
 
 
-
+/*el display:none; es para ocultar completamente un elemento de la pagina,
+en este caso el panel que saldrá una vez apretemos el icono del menu*/
 .panel-oculto{
 
   display:none;
+  
+}
+
+#boton_encabezado{
+
+  
+
+}
+
+#LaX{
+
+  position: absolute;
+  border:none;
+  top: 10px;
+  right: 15px;
+
+
+
 
   
 }
