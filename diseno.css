@@ -1,0 +1,30 @@
+.contenedor-boton{
+  position: fixed;
+  top:100px;
+  text-align: left;
+  height: 100px;
+  padding: 10px;
+  
+}
+
+#panel-lateral{
+
+  width: 27%;
+  background-color: lightblue;
+  
+  position: fixed;
+  right: 0;
+  z-index: 40;
+  
+  height: 100vh;
+  top:0;
+}
+
+
+
+.panel-oculto{
+
+  display:none;
+
+  
+}
