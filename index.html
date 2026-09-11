@@ -19,52 +19,32 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </head>
+ <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
     <header class="p-3 mb-3 border-bottom">
-        <div class="container">
+        <div class="container-fluid">
 
             <div class="d-flex flex-wrap align-items-center justify-content-start">
 
-                <!-- Logo / nombre -->
-                <a id="milogo"
-                    href="/"
-                    class="d-flex align-items-center mb-2 mb-lg-0 me-3 text-decoration-none">
-                    PENDIENTE
+               <!-- Logo / nombre -->
+                <a id="milogo" href="/"
+                    class="text-decoration-none"> <img src="img/logo.png" alt="Logo wrapit" width="70" height="70" class="rounded-circle" style="position: relative; top: 0; left: 0; margin-top: -30px;">
+                  
+                    <span class="fs-4 fw-bold text-dark"
+                      style="position: relative; top: 6%; left: 3%;">
+                        wrapit
+                    </span>
                 </a>
-
-                <!-- Menú -->
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-
-                    <li>
-                        <a href="#" class="nav-link px-2 link-">
-                            <h7>Menu</h7>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="nav-link px-2 link-body-emphasis">
-                            <h7 style="color: blue;">Sugerencias</h7>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="nav-link px-2 link-body-emphasis">
-                            Customers
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="nav-link px-2 link-body-emphasis">
-                            Products
-                        </a>
-                    </li>
-
-                </ul>
-
                 <!-- Buscador -->
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                
+                <form class="ms-auto me-4" role="search" style="width:70%; max-width: 1000px; margin-top: 40px;">
+                  
 
                     <input type="search"
                         class="form-control"
@@ -73,6 +53,7 @@
 
                 </form>
 
+                
                 <!-- Foto / menú de usuario -->
                 <div class="dropdown text-end">
 
@@ -112,13 +93,10 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="login.html">
                                 Iniciar sesión
                             </a>
                         </li>
-
-
-
 
                         <li>
                             <hr class="dropdown-divider">
@@ -131,22 +109,89 @@
                         </li>
 
                     </ul>
-
+                </div>
                 </div>
 
-            </div>
-        </div>
+
+                
+
+                
     </header>
     <div style = "text-align: center; background-color: green;">
       <h1 id = "prueba1">PROBANDO</h1>
       <p id= "po">Estas en presencia de la mejor pagina de criticas de peliculas</p>
-
     </div>
+    
+    <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Película 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Película 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Película 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>pelicula 1</h5>
+        <p>se trata de....</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Película 2</h5>
+        <p>se trata de.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Película 3</h5>
+        <p>Se trata de.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
   
   <p style="text-align: center;">LALALALALA</p>
 
 
+<!-- Menú -->
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
+                    <li>
+                        <a href="#" class="nav-link px-2 link-">
+                            <h7>Menu</h7>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-2 link-body-emphasis">
+                            <h7 style="color: blue;">Sugerencias</h7>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-2 link-body-emphasis">
+                            Customers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-2 link-body-emphasis">
+                            Products
+                        </a>
+                    </li>
+
+                </ul>
 
 
 
