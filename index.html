@@ -28,9 +28,7 @@
 
 
 </head>
-
 <body>
-
     <header class="p-3 mb-3 border-bottom">
         <div class="container-fluid">
 
@@ -38,7 +36,7 @@
 
                <!-- Logo / nombre -->
                 <a id="milogo" href="/"
-                    class="text-decoration-none"> <img src="img/logo.png" alt="Logo wrapit" width="70" height="70" class="rounded-circle" style="position: relative; top: 0; left: 0; margin-top: -50px;">
+                    class="text-decoration-none"> <img src="" alt="Logo wrapit" width="70" height="70" class="rounded-circle" style="position: relative; top: 0; left: 0; margin-top: -50px;">
                   
                     <span class="fs-4 fw-bold text-dark"
                       style="position: relative; top: 6%; left: 3%;">
@@ -47,7 +45,7 @@
                 </a>
                 <!-- Buscador -->
                 
-                <form class="ms-auto me-4" role="search" style="width:90%; max-width: 1190px; margin-top: 40px;">
+                <form class="ms-auto me-4" role="search" style="width:90%; max-width: 1120px; margin-top: 40px;">
                   
 
                     <input type="search"
@@ -119,33 +117,11 @@
 
                           
     </header>
-    <!--barra verde-->  
-    <div style = "text-align: center; background-color: rgb(19, 22, 204);">
-        <div id="panel-lateral" class="panel-oculto">
-    
-    <!-- Encabezado del panel -->
-    <div class="panel-header">
-        <h3 id = "boton_encabezado">Opciones</h3>
-      <button id = "LaX">
-        <i class="bi bi-list"></i>
-      
-      </button>
-      
+    <!--barra morada-->  
+    <div style = "text-align: center; background-color: rgb(22, 22, 140);">
+        <h1 style="color:rgb(251, 251, 251);" id = "prueba1">PROBANDO</h1>
+      <p style="color:rgb(249, 6, 6); " id= "po">Estas en presencia de la mejor pagina de criticas de peliculas</p>
     </div>
-
-    <!-- Lista de opciones del menú -->
-    <ul class="panel-opciones">
-        <li><a href="#perfil">Mi Perfil</a></li>
-        <li><a href="#configuracion">Configuración</a></li>
-        <li><a href="#ayuda">Ayuda</a></li>
-    </ul>
-
-</div>
-
-      <h1 style="color:rgb(253, 252, 252);" id = "prueba1">PROBANDO</h1>
-      <p style="color:rgb(253, 252, 252); " id= "po">Estas en presencia de la mejor pagina de criticas de peliculas</p>
-    </div>
-
     <!--Carrusel de películas-->
     <div class="container my-4">
     <div id="carouselExampleCaptions" class="carousel slide carrusel-principal">
@@ -156,7 +132,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-        <div class="row align-items-center g-4">
+        <div class="row align-items-start g-4">
 
         <div class="col-12 col-md-4">
         <!--link de la pelicula y opiniones-->
@@ -165,7 +141,7 @@
     </a>
     </div>
     <div class="col-12 col-md-8">
-        <h5>Interestelar</h5>
+        <h4>Interestelar</h4>
         <article class="comentario">
         <p class="autor">Ana</p>
         <p>Comentario de ejemplo.</p>
@@ -178,7 +154,7 @@
     </div>
 </div>
     <div class="carousel-item">
-        <div class="row align-items-center g-4">
+        <div class="row align-items-start g-4">
 
         <div class="col-12 col-md-4">
         <a href="detalle.html" class="text-decoration-none">
@@ -199,7 +175,7 @@
     </div>
 </div>
     <div class="carousel-item">
-        <div class="row align-items-center g-4">
+        <div class="row align-items-start g-4">
 
         <div class="col-12 col-md-4">
     <a href="detalle.html" class="text-decoration-none">
@@ -229,6 +205,8 @@
   </button>
 </div>
 </div>
+<br>
+<br>
 
 
 <section id="catalogo-peliculas">
@@ -238,35 +216,37 @@
     <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
 
         <!-- Se cambia calc(25% - 15px) por un valor fijo en píxeles, ej: 220px -->
-        <article class="c_peli" style="width: 220px;">
-            <a href="cars.html" style="display: block;">
+        <div class="catalogo-grid">
+        <article class="c_peli">
+            <a href="cars.html">
                 <img src="https://filmartgallery.com/cdn/shop/files/Cars-Vintage-Movie-Poster-Original_12367988.jpg?v=1773770100&width=2048" 
-                     alt="Póster Cars" style="width: 100%; height: auto; display: block;">
+                     alt="Póster Cars" class="img-fluid">
             </a>
         </article>    
 
-        <article class="c_peli" style="width: 220px;">
-            <a href="rocky.html" style="display: block;">
+        <article class="c_peli">
+            <a href="rocky.html">
                 <img src="https://imgs.search.brave.com/cJUzmhUKrV8x0YrDpHLMkb0ZRXITQVNYABPlY8L_4sg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL2lt/YWdlcy9nL3R0d0FB/ZVN3RXFacGNVSDUv/cy1sOTYwLndlYnA" 
-                     alt="Póster Rocky" style="width: 100%; height: auto; display: block;">
+                     alt="Póster Rocky" class="img-fluid">
             </a>
         </article>    
 
-        <article class="c_peli" style="width: 220px;">
-            <a href="lalaland.html" style="display: block;">
+        <article class="c_peli">
+            <a href="lalaland.html">
                 <img src="https://moviepostermexico.com/cdn/shop/products/la_la_land_ver3_xxlg_540x.jpg?v=1571355763" 
-                     alt="Póster La La Land" style="width: 100%; height: auto; display: block;">
+                     alt="Póster La La Land" class="img-fluid">
             </a>
         </article>    
 
-        <article class="c_peli" style="width: 220px;">
-            <a href="los-increibles-2.html" style="display: block;">
+        <article class="c_peli">
+            <a href="los-increibles-2.html">
                 <img src="https://diariodevenusville.com/wp-content/uploads/2018/04/LOS-INCREIBLES-2-poster-2.jpg" 
-                     alt="Póster Los Increíbles 2" style="width: 100%; height: auto; display: block;">
+                     alt="Póster Los Increíbles 2" class="img-fluid">
             </a>
         </article>
 
     </div>
+</div>
 </section>
 
 <!-- Menú -->
@@ -299,7 +279,34 @@
                 </ul>
 
 
+<div class="contenedor-boton">
+    <button type="button" id="btn-menu-lateral">
+      <i class="bi bi-list"></i>
+        
+    </button>
+</div>
 
+  
+<div id="panel-lateral" class="panel-oculto">
+    
+    <!-- Encabezado del panel -->
+    <div class="panel-header">
+        <h3 id = "boton_encabezado">Opciones</h3>
+      <button id = "LaX">
+        <i class="bi bi-list"></i>
+      
+      </button>
+      
+    </div>
+
+    <!-- Lista de opciones del menú -->
+    <ul class="panel-opciones">
+        <li><a href="#perfil">Mi Perfil</a></li>
+        <li><a href="#configuracion">Configuración</a></li>
+        <li><a href="#ayuda">Ayuda</a></li>
+    </ul>
+
+</div>
 
 
                 
@@ -317,12 +324,6 @@
   <!-- Tu archivo JS propio -->
     <script src="script.js"></script>              
 
-
-
-<!--
-Este comentario
-abarca varias líneas
--->
 
 
 

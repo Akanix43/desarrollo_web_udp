@@ -1,6 +1,7 @@
 .contenedor-boton{
   position: absolute;
-  top:148px;
+  top:220px;
+  left:140px;
   text-align: left;
   height: 190px;
   padding: 10px;
@@ -17,8 +18,17 @@
 
   
 }
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+
+
 .columna-info {
-  --color-columna: #fff3cd; /* <- cambia solo este valor para cambiar el color de toda la columna */
+  --color-columna: #9f842a; /* <- cambia solo este valor para cambiar el color de toda la columna */
   background-color: var(--color-columna);
   padding: 1.5rem;
   border-radius: 8px;
@@ -34,10 +44,13 @@
   font-size: 1.15rem;
 }
 
-.columna-info .autor {
+.columna-info.autor {
   font-weight: bold;
   margin-bottom: 0.25rem;
 }
+
+
+
 
 #panel-lateral{
 
@@ -48,14 +61,19 @@
   left: 0;
   z-index: 40;
   
+  
   height: 100vh;
   top:0;
 }
 @media (min-width: 768px) {
   #panel-lateral{
-    width: 27%;
+    width: 18%;
   }
 }
+
+
+
+
 
 /*el display:none; es para ocultar completamente un elemento de la pagina,
 en este caso el panel que saldrá una vez apretemos el icono del menu*/
@@ -79,6 +97,43 @@ en este caso el panel que saldrá una vez apretemos el icono del menu*/
   right: 15px;
 
 }
+/*ancho del carrusel*/
+.carrusel-principal {
+  max-width: 800px;   
+  margin: 0 auto;
+}
+
+/*botones del carrusel*/
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  bottom: auto;
+transform: translateY(-50%);
+  height: 50%;
+  border-radius: 50%;
+  width: 50px;                              /* ancho del área clickeable */
+  background-color:SS rgba(138, 13, 13, 0.6);   /*fondo visible botón */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2.5rem;                           /* tamaño de la flecha (por defecto 2rem) */
+  height: 2.5rem;
+}
+.carousel-control-prev {
+  left: -60px;
+}
+
+.carousel-control-next {
+  right: -60px;
+}
+
+@media (max-width: 767px) {
+  .carousel-control-prev { left: 0; }
+  .carousel-control-next { right: 0; }
+}
+
+
 
 body {
     font-family: sans-serif;
@@ -99,7 +154,7 @@ body {
 .bloque-secundario {
     display: flex;
     gap: 30px;
-    margin-bottom 40px;
+    margin-bottom:40px;
 }
 
 .poster {
@@ -109,7 +164,7 @@ body {
 
 .poster img {
     width: 100%;
-    border-raidus: 8px;
+    border-radius: 8px;
 }
 
 .sinopsis {
@@ -123,7 +178,7 @@ body {
 
 .bloque-comentarios {
     border-top: 1px solid #ddd;
-    padding_top 20px;
+    padding-top: 20px;
 }
 
 .comentario {
@@ -132,4 +187,29 @@ body {
     border-radius: 6px;
     margin-bottom: 15px;
 }
+
+.comentario p{
+    margin: 5px 0 0 0;
+    color:white;
+}
+
+@media (max-width: 600px) {
+
+.bloque-superior {
+
+flex-direction: column; 
+
+}
+}
+
+.poster {
+
+width: 100%;
+
+max-width: 300px;
+
+margin: 0 auto; 
+
+}
+
 
