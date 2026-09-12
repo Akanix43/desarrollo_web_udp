@@ -12,7 +12,7 @@
         crossorigin="anonymous">
 
     <!-- Nuestro CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="diseno.css">
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -25,6 +25,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -36,7 +38,7 @@
 
                <!-- Logo / nombre -->
                 <a id="milogo" href="/"
-                    class="text-decoration-none"> <img src="img/logo.png" alt="Logo wrapit" width="70" height="70" class="rounded-circle" style="position: relative; top: 0; left: 0; margin-top: -30px;">
+                    class="text-decoration-none"> <img src="img/logo.png" alt="Logo wrapit" width="70" height="70" class="rounded-circle" style="position: relative; top: 0; left: 0; margin-top: -50px;">
                   
                     <span class="fs-4 fw-bold text-dark"
                       style="position: relative; top: 6%; left: 3%;">
@@ -45,7 +47,7 @@
                 </a>
                 <!-- Buscador -->
                 
-                <form class="ms-auto me-4" role="search" style="width:70%; max-width: 1000px; margin-top: 40px;">
+                <form class="ms-auto me-4" role="search" style="width:90%; max-width: 1190px; margin-top: 40px;">
                   
 
                     <input type="search"
@@ -67,8 +69,9 @@
                         <img id="mi_imagen"
                             src="https://i.pinimg.com/236x/77/d8/9a/77d89a1d20435b3532a3083e627f5f13.jpg"
                             alt="Imagen de usuario"
-                            width="32"
-                            height="32"
+                            width="45"
+                            height="45"
+                            style="margin-right: 10px;  margin-top: -10%;"
                             class="rounded-circle">
 
                     </a>
@@ -112,20 +115,40 @@
 
                     </ul>
                 </div>
-                </div>
+            </div>
 
-
-                
-
-    <!--barra verde-->            
+                          
     </header>
-    <div style = "text-align: center; background-color: green;">
-      <h1 id = "prueba1">PROBANDO</h1>
-      <p id= "po">Estas en presencia de la mejor pagina de criticas de peliculas</p>
+    <!--barra verde-->  
+    <div style = "text-align: center; background-color: rgb(19, 22, 204);">
+        <div id="panel-lateral" class="panel-oculto">
+    
+    <!-- Encabezado del panel -->
+    <div class="panel-header">
+        <h3 id = "boton_encabezado">Opciones</h3>
+      <button id = "LaX">
+        <i class="bi bi-list"></i>
+      
+      </button>
+      
     </div>
+
+    <!-- Lista de opciones del menú -->
+    <ul class="panel-opciones">
+        <li><a href="#perfil">Mi Perfil</a></li>
+        <li><a href="#configuracion">Configuración</a></li>
+        <li><a href="#ayuda">Ayuda</a></li>
+    </ul>
+
+</div>
+
+      <h1 style="color:rgb(253, 252, 252);" id = "prueba1">PROBANDO</h1>
+      <p style="color:rgb(253, 252, 252); " id= "po">Estas en presencia de la mejor pagina de criticas de peliculas</p>
+    </div>
+
     <!--Carrusel de películas-->
     <div class="container my-4">
-    <div id="carouselExampleCaptions" class="carousel slide" style="max-width: 800px; margin: 0 auto">
+    <div id="carouselExampleCaptions" class="carousel slide carrusel-principal">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Película 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Película 2"></button>
@@ -133,34 +156,69 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
+        <div class="row align-items-center g-4">
+
+        <div class="col-12 col-md-4">
         <!--link de la pelicula y opiniones-->
     <a href="detalle.html" class="text-decoration-none">
       <img src="https://i.pinimg.com/1200x/0b/34/ce/0b34ce2145b475247577a5d438a199b0.jpg" class="d-block w-100" alt="nombre de la pelicula">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>pelicula 1</h5>
-        <p>se trata de....</p>
-      </div>
     </a>
     </div>
+    <div class="col-12 col-md-8">
+        <h5>Interestelar</h5>
+        <article class="comentario">
+        <p class="autor">Ana</p>
+        <p>Comentario de ejemplo.</p>
+    </article>
+    <article class="comentario">
+        <p class="autor">Marco</p>
+        <p>Otro comentario de ejemplo.</p>
+    </article>
+</div>
+    </div>
+</div>
     <div class="carousel-item">
+        <div class="row align-items-center g-4">
+
+        <div class="col-12 col-md-4">
         <a href="detalle.html" class="text-decoration-none">
       <img src="https://i.pinimg.com/736x/24/e4/a2/24e4a2e65cedbaf56090f15dbed88909.jpg" class="d-block w-100" alt="nombre de la pelicula">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Película 2</h5>
-        <p>se trata de...</p>
-      </div>
       </a>
     </div>
+    <div class="col-12 col-md-8">
+        <h5>El silencio de los inocentes</h5>
+        <article class="comentario">
+        <p class="autor">Ana</p>
+        <p>Comentario de ejemplo.</p>
+    </article>
+    <article class="comentario">
+        <p class="autor">Marco</p>
+        <p>Otro comentario de ejemplo.</p>
+    </article>
+</div>
+    </div>
+</div>
     <div class="carousel-item">
+        <div class="row align-items-center g-4">
+
+        <div class="col-12 col-md-4">
     <a href="detalle.html" class="text-decoration-none">
       <img src="https://i.pinimg.com/736x/82/ae/fe/82aefe1684b42ebc5a8650dd8d6c0a84.jpg" class="d-block w-100" alt="nombre de la pelicula">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Película 3</h5>
-        <p>Se trata de.</p>
-      </div>
-    </a>
+      </a>
     </div>
-  </div>
+    <div class="col-12 col-md-8">
+        <h5>Resplandor de una mente sin recuerdos</h5>
+        <article class="comentario">
+        <p class="autor">Ana</p>
+        <p>Comentario de ejemplo.</p>
+    </article>
+    <article class="comentario">
+        <p class="autor">Marco</p>
+        <p>Otro comentario de ejemplo.</p>
+    </article>
+</div>
+    </div>
+</div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -173,36 +231,35 @@
 </div>
 
 
-  
-  <p style="text-align: center;">LALALALALA</p>
-....................................................
 <section id="catalogo-peliculas">
-    <h2>Catálogo de Peliculas</h2>
+    <h2 style="text-align: center;"> Catálogo de Peliculas</h2>
 
-    <div style="display: flex; gap: 20px; flex-wrap;">
+    <!-- Se agrega justify-content: center; para mantener el bloque centrado -->
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
 
-        <article class="c_peli" style="width: calc(25% - 15px);">
+        <!-- Se cambia calc(25% - 15px) por un valor fijo en píxeles, ej: 220px -->
+        <article class="c_peli" style="width: 220px;">
             <a href="cars.html" style="display: block;">
                 <img src="https://filmartgallery.com/cdn/shop/files/Cars-Vintage-Movie-Poster-Original_12367988.jpg?v=1773770100&width=2048" 
                      alt="Póster Cars" style="width: 100%; height: auto; display: block;">
             </a>
         </article>    
 
-        <article class="c_peli" style="width: calc(25% - 15px);">
+        <article class="c_peli" style="width: 220px;">
             <a href="rocky.html" style="display: block;">
                 <img src="https://imgs.search.brave.com/cJUzmhUKrV8x0YrDpHLMkb0ZRXITQVNYABPlY8L_4sg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL2lt/YWdlcy9nL3R0d0FB/ZVN3RXFacGNVSDUv/cy1sOTYwLndlYnA" 
                      alt="Póster Rocky" style="width: 100%; height: auto; display: block;">
             </a>
         </article>    
 
-        <article class="c_peli" style="width: calc(25% - 15px);">
+        <article class="c_peli" style="width: 220px;">
             <a href="lalaland.html" style="display: block;">
                 <img src="https://moviepostermexico.com/cdn/shop/products/la_la_land_ver3_xxlg_540x.jpg?v=1571355763" 
                      alt="Póster La La Land" style="width: 100%; height: auto; display: block;">
             </a>
         </article>    
 
-        <article class="c_peli" style="width: calc(25% - 15px);">
+        <article class="c_peli" style="width: 220px;">
             <a href="los-increibles-2.html" style="display: block;">
                 <img src="https://diariodevenusville.com/wp-content/uploads/2018/04/LOS-INCREIBLES-2-poster-2.jpg" 
                      alt="Póster Los Increíbles 2" style="width: 100%; height: auto; display: block;">
@@ -247,34 +304,7 @@
 
                 
 
- <div class="contenedor-boton">
-    <button type="button" id="btn-menu-lateral">
-      <i class="bi bi-list"></i>
-        
-    </button>
-</div>
-
-  
-<div id="panel-lateral" class="panel-oculto">
-    
-    <!-- Encabezado del panel -->
-    <div class="panel-header">
-        <h3 id = "boton_encabezado">Opciones</h3>
-      <button id = "LaX">
-        <i class="bi bi-list"></i>
-      
-      </button>
-      
-    </div>
-
-    <!-- Lista de opciones del menú -->
-    <ul class="panel-opciones">
-        <li><a href="#perfil">Mi Perfil</a></li>
-        <li><a href="#configuracion">Configuración</a></li>
-        <li><a href="#ayuda">Ayuda</a></li>
-    </ul>
-
-</div>
+ 
 
   
 
@@ -289,7 +319,10 @@
 
 
 
-
+<!--
+Este comentario
+abarca varias líneas
+-->
 
 
 
