@@ -36,7 +36,7 @@
 
                <!-- Logo / nombre -->
                 <a id="milogo" href="/"
-                    class="text-decoration-none"> <img src="" alt="Logo wrapit" width="70" height="70" class="rounded-circle" style="position: relative; top: 0; left: 0; margin-top: -50px;">
+                    class="text-decoration-none"> <img src="https://cdn.creativefabrica.com/2021/12/16/Movie-Camera-PNG-File-Cute-Clip-Art-Graphics-21814792-1.png" alt="Logo wrapit" width="100" height="90" style="position: relative; top: 0; left: 0; margin-top: -50px;">
                   
                     <span class="fs-4 fw-bold text-dark"
                       style="position: relative; top: 6%; left: 3%;">
@@ -67,9 +67,9 @@
                         <img id="mi_imagen"
                             src="https://i.pinimg.com/236x/77/d8/9a/77d89a1d20435b3532a3083e627f5f13.jpg"
                             alt="Imagen de usuario"
-                            width="45"
-                            height="45"
-                            style="margin-right: 10px;  margin-top: -10%;"
+                            width="60"
+                            height="60"
+                            style="margin-right: 0px;  margin-top: -5%;"
                             class="rounded-circle">
 
                     </a>
@@ -117,14 +117,43 @@
 
                           
     </header>
-    <!--barra morada-->  
-    <div style = "text-align: center; background-color: rgb(22, 22, 140);">
-        <h1 style="color:rgb(251, 251, 251);" id = "prueba1">PROBANDO</h1>
-      <p style="color:rgb(249, 6, 6); " id= "po">Estas en presencia de la mejor pagina de criticas de peliculas</p>
-    </div>
-    <!--Carrusel de películas-->
-    <div class="container my-4">
-    <div id="carouselExampleCaptions" class="carousel slide carrusel-principal">
+    
+    <!--BARRA AZUUUUUUUL-->  
+    
+    
+    <div class="barra">
+        <div class="contenedor-del-boton">
+            <button type="button" id="btn-menu-lateral">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+        
+        <div class="texto-encabezado">
+            <h1 id="prueba1"> PROBANDO </h1>
+            <p id="po"> Estas en presencia de la mejor pagina de criticas de peliculas</p>
+        </div>
+        
+        
+        <div id="panel-lateral" class="panel-oculto">
+            <div class="panel-header">
+                <h3 id="boton_encabezado">Opciones</h3>
+                <button id="LaX">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+            
+            <ul class="panel-opciones">
+                <li><a href = "#perfil"> Mi perfil </a></li>
+                <li><a href = "#Configuracion"> Configuracion </a></li>
+                <li><a href = "#Ayuda"> Ayuda </a></li>
+            </ul>
+        </div>
+    </div>            
+
+
+   <!--Carrusel de películas-->
+<div class="container my-4">
+<div id="carouselExampleCaptions" class="carousel slide carrusel-principal">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Película 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Película 2"></button>
@@ -132,7 +161,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-        <div class="row align-items-start g-4">
+        <div class="row g-4">
 
         <div class="col-12 col-md-4">
         <!--link de la pelicula y opiniones-->
@@ -141,7 +170,8 @@
     </a>
     </div>
     <div class="col-12 col-md-8">
-        <h4>Interestelar</h4>
+        <h5>Interestelar</h5>
+        <p>Sinopsis....</p>
         <article class="comentario">
         <p class="autor">Ana</p>
         <p>Comentario de ejemplo.</p>
@@ -154,7 +184,7 @@
     </div>
 </div>
     <div class="carousel-item">
-        <div class="row align-items-start g-4">
+        <div class="row g-4">
 
         <div class="col-12 col-md-4">
         <a href="detalle.html" class="text-decoration-none">
@@ -163,6 +193,7 @@
     </div>
     <div class="col-12 col-md-8">
         <h5>El silencio de los inocentes</h5>
+        <p>Sinopsis....</p>
         <article class="comentario">
         <p class="autor">Ana</p>
         <p>Comentario de ejemplo.</p>
@@ -175,7 +206,7 @@
     </div>
 </div>
     <div class="carousel-item">
-        <div class="row align-items-start g-4">
+        <div class="row g-4">
 
         <div class="col-12 col-md-4">
     <a href="detalle.html" class="text-decoration-none">
@@ -184,6 +215,7 @@
     </div>
     <div class="col-12 col-md-8">
         <h5>Resplandor de una mente sin recuerdos</h5>
+        <p>Sinopsis....</p>
         <article class="comentario">
         <p class="autor">Ana</p>
         <p>Comentario de ejemplo.</p>
@@ -195,6 +227,8 @@
 </div>
     </div>
 </div>
+  </div>
+
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -204,49 +238,42 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-</div>
-<br>
-<br>
-
+</div>  
+    
 
 <section id="catalogo-peliculas">
     <h2 style="text-align: center;"> Catálogo de Peliculas</h2>
 
-    <!-- Se agrega justify-content: center; para mantener el bloque centrado -->
-    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-
         <!-- Se cambia calc(25% - 15px) por un valor fijo en píxeles, ej: 220px -->
         <div class="catalogo-grid">
         <article class="c_peli">
-            <a href="peliculas/cars.html">
+            <a href="peliculasHTML/cars.html">
                 <img src="https://filmartgallery.com/cdn/shop/files/Cars-Vintage-Movie-Poster-Original_12367988.jpg?v=1773770100&width=2048" 
                      alt="Póster Cars" class="img-fluid">
             </a>
         </article>    
 
         <article class="c_peli">
-            <a href="peliculas/rocky.html">
+            <a href="peliculasHTML/rocky.html">
                 <img src="https://imgs.search.brave.com/cJUzmhUKrV8x0YrDpHLMkb0ZRXITQVNYABPlY8L_4sg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL2lt/YWdlcy9nL3R0d0FB/ZVN3RXFacGNVSDUv/cy1sOTYwLndlYnA" 
                      alt="Póster Rocky" class="img-fluid">
             </a>
         </article>    
 
         <article class="c_peli">
-            <a href="peliculas/lalaland.html">
+            <a href="peliculasHTML/lalaland.html">
                 <img src="https://moviepostermexico.com/cdn/shop/products/la_la_land_ver3_xxlg_540x.jpg?v=1571355763" 
                      alt="Póster La La Land" class="img-fluid">
             </a>
         </article>    
 
         <article class="c_peli">
-            <a href="peliculas/los-increibles-2.html">
+            <a href="peliculasHTML/los-increibles-2.html">
                 <img src="https://diariodevenusville.com/wp-content/uploads/2018/04/LOS-INCREIBLES-2-poster-2.jpg" 
                      alt="Póster Los Increíbles 2" class="img-fluid">
             </a>
         </article>
-
     </div>
-</div>
 </section>
 
 <!-- Menú -->
@@ -277,48 +304,6 @@
                     </li>
 
                 </ul>
-
-
-<div class="contenedor-boton">
-    <button type="button" id="btn-menu-lateral">
-      <i class="bi bi-list"></i>
-        
-    </button>
-</div>
-
-  
-<div id="panel-lateral" class="panel-oculto">
-    
-    <!-- Encabezado del panel -->
-    <div class="panel-header">
-        <h3 id = "boton_encabezado">Opciones</h3>
-      <button id = "LaX">
-        <i class="bi bi-list"></i>
-      
-      </button>
-      
-    </div>
-
-    <!-- Lista de opciones del menú -->
-    <ul class="panel-opciones">
-        <li><a href="#perfil">Mi Perfil</a></li>
-        <li><a href="#configuracion">Configuración</a></li>
-        <li><a href="#ayuda">Ayuda</a></li>
-    </ul>
-
-</div>
-
-
-                
-
- 
-
-  
-
-
-  
-
-
 
 
   <!-- Tu archivo JS propio -->

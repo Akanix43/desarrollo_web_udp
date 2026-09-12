@@ -1,23 +1,69 @@
-.contenedor-boton{
-  position: absolute;
-  top:220px;
-  left:140px;
-  text-align: left;
-  height: 190px;
-  padding: 10px;
- /*z-index:41; aparece encima del menu lateral*/
+
+.barra{
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+.contenedor-del-boton{
+  margin-right: 20px;    
+
 }
 
 #btn-menu-lateral{
 
-  background: white;
+  background: transparent;
   border: none;
-  padding: 10;
+  cursor: pointer;
+  font-size: 24px;
+  
+  color:white;
+  display:flex;
+  align-items: center;
+
+}
+  
+.texto-encabezado h1, .texto-encabezado p{
+  margin: 0;
+}
+
+#panel-lateral{
+  width: 200px;
+  background-color: grey;
+  position: fixed;
+  left:0;
+  top:0;
+  height: 100vh;
+  z-index:40;
+  color:black;
+}
+
+.panel-oculto{
+  display: none;
+}  
+
+#LaX{
+  position: absolute;
+  border: none;
+  background: transparent;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
 
-
-  
 }
+
+
+
+
+
+
+
+
 
 .catalogo-grid {
   display: grid;
@@ -52,51 +98,11 @@
 
 
 
-#panel-lateral{
-
-  width: 80%;
-  background-color: lightblue;
-  
-  position: fixed;
-  left: 0;
-  z-index: 40;
-  
-  
-  height: 100vh;
-  top:0;
-}
-@media (min-width: 768px) {
-  #panel-lateral{
-    width: 18%;
-  }
-}
 
 
 
 
 
-/*el display:none; es para ocultar completamente un elemento de la pagina,
-en este caso el panel que saldrá una vez apretemos el icono del menu*/
-.panel-oculto{
-
-  display:none;
-  
-}
-
-#boton_encabezado{
-
-  
-
-}
-
-#LaX{
-
-  position: absolute;
-  border:none;
-  top: 10px;
-  right: 15px;
-
-}
 /*ancho del carrusel*/
 .carrusel-principal {
   max-width: 800px;   
@@ -109,16 +115,16 @@ en este caso el panel que saldrá una vez apretemos el icono del menu*/
   top: 50%;
   bottom: auto;
 transform: translateY(-50%);
-  height: 50%;
-  border-radius: 50%;
+  height: 50px;
+  border-radius: 55%;
   width: 50px;                              /* ancho del área clickeable */
-  background-color:SS rgba(138, 13, 13, 0.6);   /*fondo visible botón */
+  background-color: rgba(71, 38, 218, 0.583);   /*fondo visible botón */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 2.5rem;                           /* tamaño de la flecha (por defecto 2rem) */
-  height: 2.5rem;
+  width: 2.0rem;                           /* tamaño de la flecha (por defecto 2rem) */
+  height: 2.0rem;
 }
 .carousel-control-prev {
   left: -60px;
@@ -127,19 +133,35 @@ transform: translateY(-50%);
 .carousel-control-next {
   right: -60px;
 }
+/*indicadores del carrusel*/
+.carousel-indicators {
+  bottom: -30px;
+  color: rgba(71, 38, 218, 0.583);
+}
 
 @media (max-width: 767px) {
   .carousel-control-prev { left: 0; }
   .carousel-control-next { right: 0; }
 }
-
-
+@media (min-width:768px){
+  .carrusel-principal .carousel-item{
+    height: 430px;
+    overflow: hidden;
+}
+.carrusel-principal .carousel-item .row {
+    height: 100%;
+  }
+.carrusel-principal .carousel-item{
+  overflow-y: auto;
+}
+}
 
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 40px 20px;
-    background-color: #f5f5f5;
+    background: #7545b5;
+background: linear-gradient(90deg,rgba(117, 69, 181, 1) 0%, rgba(92, 84, 145, 1) 50%, rgba(30, 24, 82, 1) 100%);
 }
 
 .bloque-principal {
@@ -211,5 +233,33 @@ max-width: 300px;
 margin: 0 auto; 
 
 }
+/*catalogo*/
+.c_peli {
+    width: 220px;
+    height: 330px;
+    flex-shrink: 0;
+}
 
+c_peli img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
 
+.catalogo-grid {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+/*animación logo*/
+#milogo img {
+  transition: transform 0.3s ease;
+}
+
+#milogo:hover img {
+  transform: scale(1.15) rotate(-5deg);
+}
+/*iniciar sesion*/
