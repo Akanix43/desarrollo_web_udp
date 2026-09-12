@@ -43,17 +43,50 @@
                         wrapit
                     </span>
                 </a>
-                <!-- Buscador -->
                 
-                <form class="ms-auto me-4" role="search" style="width:90%; max-width: 1120px; margin-top: 40px;">
+                
+                
+                <!-- Buscador -->
+                 <form id="miFormulario" class="ms-auto me-4" role="search" style="width: 100%; max-width: 700px;">  <!--para aumentarle el largo se le modifica el maxwidth-->
                   
 
-                    <input type="search"
+                    <input
+                        id="Busqueda" 
+                        type="search"
                         class="form-control"
                         placeholder="Buscar..."
                         aria-label="Search">
 
+                    <div id="Resultados" class="mensaje-resultado"></div>    
+
                 </form>
+                
+
+               <!-- 
+                <div id="Buscador" style="width:90%; max-width:1120px; margin-top: 40px;">
+                    <input
+                      type="text"
+                      id="Busqueda"
+                      placeholder="Buscar..."
+                    >
+                    
+                    <button id="btnBuscar">
+                      <i class="bi bi-search"></i>
+                    </button>
+
+                </div>
+
+                <div  id="Resultados"></div>
+                <script src="script.js"></script>
+            -->
+
+
+
+
+                
+
+
+
 
                 
                 <!-- Foto / menú de usuario -->
@@ -65,7 +98,7 @@
                         aria-expanded="false">
 
                         <img id="mi_imagen"
-                            src="https://i.pinimg.com/236x/77/d8/9a/77d89a1d20435b3532a3083e627f5f13.jpg"
+                            src="https://imgs.search.brave.com/221eohnbuUd2XALiaCOCVzMmNuUymP5THIvxXSnKYys/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMjE0/OTkyMjI2Ny9lcy92/ZWN0b3IvaWNvbm8t/ZGUtdXN1YXJpby5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/UWZkNm5qWlEyUExF/OW9mZUJhZVFXa09S/Q1d0Nk1JZUJnZEtL/cDBOZVVYYz0"
                             alt="Imagen de usuario"
                             width="60"
                             height="60"
@@ -77,40 +110,10 @@
                     <ul class="dropdown-menu text-small">
 
                         <li>
-                            <a class="dropdown-item" href="#">
-                                Proyecto Nuevo
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                Configuración
-                            </a>
-                        </li>
-
-
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                Perfil
-                            </a>
-                        </li>
-
-                        <li>
                             <a class="dropdown-item" href="login.html">
                                 Iniciar sesión
                             </a>
                         </li>
-
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                Sign out
-                            </a>
-                        </li>
-
                     </ul>
                 </div>
             </div>
@@ -244,7 +247,6 @@
 <section id="catalogo-peliculas">
     <h2 style="text-align: center;"> Catálogo de Peliculas</h2>
 
-        <!-- Se cambia calc(25% - 15px) por un valor fijo en píxeles, ej: 220px -->
         <div class="catalogo-grid">
         <article class="c_peli">
             <a href="peliculasHTML/cars.html">
@@ -281,25 +283,25 @@
 
                     <li>
                         <a href="#" class="nav-link px-2 link-">
-                            <h7>Menu</h7>
+                            <h7 style="color: black;"> Contactanos </h7>
                         </a>
                     </li>
 
                     <li>
                         <a href="#" class="nav-link px-2 link-body-emphasis">
-                            <h7 style="color: blue;">Sugerencias</h7>
+                            <h7 style="color: black;">pablo.allendes@mail.udp.cl</h7>
                         </a>
                     </li>
 
                     <li>
                         <a href="#" class="nav-link px-2 link-body-emphasis">
-                            Customers
+                            <h7 style="color: black;">olexiy.karpichkov@mail.udp.cl</h7>
                         </a>
                     </li>
 
                     <li>
                         <a href="#" class="nav-link px-2 link-body-emphasis">
-                            Products
+                            <h7 style="color: black;">pilar.fuenzalida@mail.udp.cl</h7>
                         </a>
                     </li>
 
