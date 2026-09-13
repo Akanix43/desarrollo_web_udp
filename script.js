@@ -1,16 +1,7 @@
 const btnMenu = document.getElementById('btn-menu-lateral');
 const panelLateral = document.getElementById('panel-lateral');
 const btnCerrar = document.getElementById('LaX');
-/*
-btnMenu.addEventListener('click', ()=>{
 
-  panelLateral.classList.remove('panel-oculto');
-
-
-
-  
-});
-*/
 btnCerrar.addEventListener('click', ()=>{
 
   panelLateral.classList.add('panel-oculto');
@@ -27,7 +18,8 @@ btnMenu.addEventListener('click', () => {
 
 /*DINAMICO BUSCADOR*/
 
-const peliculas=["Cars", "Interstellar", "Rocky"];
+const peliculas=["Cars", "Interstellar", "Rocky", "Lalaland", "El silencio de los inocentes", "Los increibles 2",
+"Resplandor de una mente sin recuerdos"];
 
 const miFormulario = document.getElementById('miFormulario');
 const busqueda = document.getElementById('Busqueda');
@@ -46,7 +38,7 @@ miFormulario.addEventListener("submit", function(event){
 
     Resultados.innerHTML = "Dato invalido";
 
-  }else if(texto == "Cars" || texto == "Interstellar" || texto == "Rocky"){
+  }else if(texto == "Cars" || texto == "Interstellar" || texto == "Rocky"  || texto == "Lalaland" || texto=="El silencio de los inocentes"  || texto == "Los increibles 2" || texto == "Resplandor de una mente sin recuerdos"){
 
     Resultados.innerHTML="Exito, pelicula encontrada";
     
