@@ -3,11 +3,10 @@ CritiFilms
 Descripción de proyecto
 
 CritiFilms es una plataforma social de reseñas de películas, inspirada en letterboxd,desarrollada en la etapa 1 del curso de
-desarrollo web sección __, de la carrera de Ingenieria en informática y Telecomunicaciones de la Universidad Diego Portales.
+desarrollo web sección 01, de la carrera de Ingenieria en informática y Telecomunicaciones de la Universidad Diego Portales.
 
-El sitio permite explorar un catálogo de películas, ver una selección destacada en un carrusel con reseñas de ejemplo provisorias también al navegar al detalle de cada título.
-Por el momento el sitio tiene cortas referencias JavaScript y no contiene una base de datos, dicho antes, las reseñas y datos de usuarios son utilizadas como prueba para representar el
-dominio original del proyecto (red social de críticas de cine) esperando ser conectado a backend en etapas posteriores.
+El sitio permite explorar un catálogo de películas, ver una selección destacada en un carrusel con reseñas de ejemplo provisorias que también se puede ver al navegar al detalle de cada título.
+Por el momento el sitio tiene cortas referencias JavaScript y no contiene una base de datos, dicho antes, las reseñas y datos de usuarios son utilizadas como prueba para representar el dominio original del proyecto (red social de críticas de cine) esperando ser conectado a backend en etapas posteriores.
 
 Tecnologías utilizadas
 HTML5 y CSS3
