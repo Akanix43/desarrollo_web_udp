@@ -1,6 +1,6 @@
 
 .barra{
-  background-color: blue;
+  background-color: rgb(136, 34, 238);
   color: white;
   padding: 10px 20px;
 
@@ -196,11 +196,11 @@ background: linear-gradient(90deg,rgba(117, 69, 181, 1) 0%, rgba(92, 84, 145, 1)
 
 .sinopsis p {
     line-height: 1.6;
-    color:purple;
+    color:black;
 }
 
 .bloque-comentarios {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid black;
     padding-top: 20px;
 }
 
@@ -213,7 +213,7 @@ background: linear-gradient(90deg,rgba(117, 69, 181, 1) 0%, rgba(92, 84, 145, 1)
 
 .comentario p{
     margin: 5px 0 0 0;
-    color:white;
+    color:black;
 }
 
 @media (max-width: 600px) {
@@ -278,3 +278,40 @@ c_peli img {
 
 }
 
+
+
+
+/*inicio de sesion*/
+.login-container {
+    background-color: purple;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    color: black;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.link-retorno {
+    color: white;
+}

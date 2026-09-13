@@ -23,6 +23,8 @@ btnMenu.addEventListener('click', () => {
 });
 
 
+
+
 /*DINAMICO BUSCADOR*/
 
 const peliculas=["Cars", "Interstellar", "Rocky"];
