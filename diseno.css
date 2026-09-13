@@ -283,8 +283,8 @@ c_peli img {
 
 /*inicio de sesion*/
 .login-container {
-    background-color: purple;
-    padding: 30px;
+    background-color: blueviolet;
+    padding: 100px;
     border-radius: 10px;
     width: 300px;
     margin: 50px auto;
