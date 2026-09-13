@@ -18,4 +18,29 @@ Google Fonts — familia Urbanist
 Despliegue en una instancia Amazon EC2 (AWS Academy Learner Lab) con IP elástica
 
 Estructura general de carpetas
+proyecto-web-aws/
+├── index.html                  # Página de inicio: header, menú lateral, carrusel, catálogo destacado
+├── diseno.css                  # Hoja de estilos principal del sitio
+├── jscript/                    # Lógica de interacción en JavaScript
+│   ├── script.js                   # Menú lateral, búsqueda
+│   ├── loginJS.js                  # Lógica de la página de inicio de sesión
+│   └── botonComentario.js          # (nombre por confirmar)
+├── principalHTML/              # Páginas principales de navegación
+│   ├── catalogo.html               # Catálogo completo de películas
+│   └── login.html                  # Página de inicio de sesión
+└── peliculasHTML/              # Una página de detalle por película
+    ├── cars.html
+    ├── coraline.html
+    ├── donde-estan-las-rubias.html
+    ├── el-silencio-de-los-inocentes.html
+    ├── interestellar.html
+    ├── lalaland.html
+    ├── los-increibles-2.html
+    ├── proyecto-fin-del-mundo.html
+    ├── resplandor-de-una-mente-sin-recuerdos.html
+    ├── rocky.html
+    ├── supercool.html
+    └── yo-robot.html
+    
 Funcionalidades principales
+Dirección IP de despliegue
