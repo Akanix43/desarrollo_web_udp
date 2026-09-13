@@ -24,7 +24,7 @@ proyecto-web-aws/
 ├── jscript/                    # Lógica de interacción en JavaScript
 │   ├── script.js                   # Menú lateral, búsqueda
 │   ├── loginJS.js                  # Lógica de la página de inicio de sesión
-│   └── botonComentario.js          # (nombre por confirmar)
+│   └── botonComentario.js          # botón para ingresar comentario
 ├── principalHTML/              # Páginas principales de navegación
 │   ├── catalogo.html               # Catálogo completo de películas
 │   └── login.html                  # Página de inicio de sesión
