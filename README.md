@@ -43,4 +43,12 @@ proyecto-web-aws/
     └── yo-robot.html
     
 Funcionalidades principales
-Dirección IP de despliegue
+Encabezado responsivo: logo con animación al pasar el cursor, barra de búsqueda y menú de usuario (perfil, configuración, inicio de sesión).
+Menú lateral desplegable: se abre con el botón de hamburguesa; incluye enlaces a Inicio de sesión y Catálogo.
+Carrusel de películas destacadas: cada página del carrusel muestra el póster junto con el título y reseñas de ejemplo de distintos usuarios.
+Catálogo de películas: plantilla de posters de las películas del sitio, incluye scroll horizontal en celular y distribución centrada en pantallas grandes; cada póster enlaza a su página de detalle.
+Páginas de detalle por película: información y reseñas específicas de cada título.
+Formulario de inicio de sesión: vista de acceso de usuario (sin autenticación real, sin backend por ahora).
+Diseño adaptable: ajustado para teléfono, tablet y escritorio mediante media queries y clases de grid de Bootstrap.
+
+Dirección IP de despliegue:
