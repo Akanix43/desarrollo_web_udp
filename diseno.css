@@ -1,6 +1,7 @@
 
 .barra{
-  background-color: 6247E8;
+  font-family: 'Urbanist', sans-serif;
+  background-color: rgb(51, 40, 204);
   color: white;
   padding: 10px 20px;
 
@@ -11,6 +12,7 @@
 
 }
 .texto-encabezado{
+  font-family: 'Urbanist', sans-serif;
   min-width: 0; }/*por ver, ya que sin eso se ve bien en telefono, con eso el texto se pone debajo del botón lateral*/
 
 @media (max-width:480px){
@@ -47,13 +49,13 @@
 #panel-lateral{
   width: 80%;
   /*background-color: rgb(58, 56, 56);   PRIMER COLOR*/
-  background: linear-gradient(145deg, #444242, #2a292a);
+  background: rgb(38, 30, 153);
   position: fixed;
   left:0;
   top:0;
   height: 100vh;
   z-index:40;
-  color:black;
+  color:white;
 }
 @media (min-width:768px){
 #panel-lateral{
@@ -72,6 +74,8 @@
   top: 10px;
   right: 10px;
   cursor: pointer;
+  color: white;
+  
 
 }
 
@@ -113,7 +117,24 @@
   margin-bottom: 0.25rem;
 }
 
+.card {
+  height: 100%;
+}
 
+.card-body {
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 0;
+}
 
 
 
@@ -175,11 +196,10 @@ transform: translateY(-50%);
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Urbanist', sans-serif;
     margin: 0;
     padding: 40px 20px;
-    background: #3216ba;
-    background: linear-gradient(242deg, rgba(50, 22, 186, 1) 0%, rgba(55, 27, 140, 1) 35%, rgba(7, 2, 26, 1) 72%, rgba(0, 0, 0, 1) 100%);;
+    background: #150660;
 }
 
 .bloque-principal {
@@ -222,7 +242,7 @@ body {
 }
 
 .comentario {
-    background-color: blueviolet;
+    background-color: rgb(51, 40, 204);
     padding: 15px;
     border-radius: 6px;
     margin-bottom: 15px;
@@ -230,7 +250,7 @@ body {
 
 .comentario p{
     margin: 5px 0 0 0;
-    color:black;
+    color:rgb(255, 255, 255);
 }
 
 @media (max-width: 600px) {
@@ -307,7 +327,7 @@ margin: 0 auto;
 
 /*inicio de sesion*/
 .login-container {
-    background-color: blueviolet;
+    background-color: white;
     padding: 100px;
     border-radius: 10px;
     width: 300px;
