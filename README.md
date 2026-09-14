@@ -50,4 +50,4 @@ Páginas de detalle por película: información y reseñas específicas de cada 
 Formulario de inicio de sesión: vista de acceso de usuario (sin autenticación real, sin backend por ahora).
 Diseño adaptable: ajustado para teléfono, tablet y escritorio mediante media queries y clases de grid de Bootstrap.
 
-Dirección IP de despliegue: 34.200.170.200
+Dirección IP de despliegue: 54.86.217.12
