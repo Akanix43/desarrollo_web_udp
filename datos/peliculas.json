@@ -1,0 +1,17 @@
+[
+  { "id": 1, "titulo": "Cars", "genero": "Animación", "anio": 2006, "director": "John Lasseter", "calificacion": 0, "poster": "https://filmartgallery.com/cdn/shop/files/Cars-Vintage-Movie-Poster-Original_12367988.jpg?v=1773770100&width=2048" },
+  { "id": 2, "titulo": "El silencio de los inocentes", "genero": "Thriller", "anio": 1991, "director": "Jonathan Demme", "calificacion": 0, "poster": "https://i.pinimg.com/736x/24/e4/a2/24e4a2e65cedbaf56090f15dbed88909.jpg" },
+  { "id": 3, "titulo": "Interestellar", "genero": "Ciencia ficción", "anio": 2014, "director": "Christopher Nolan", "calificacion": 0, "poster": "https://i.pinimg.com/1200x/0b/34/ce/0b34ce2145b475247577a5d438a199b0.jpg" },
+  { "id": 4, "titulo": "La la land", "genero": "Musical", "anio": 2016, "director": "Damien Chazelle", "calificacion": 0, "poster": "https://moviepostermexico.com/cdn/shop/products/la_la_land_ver3_xxlg_540x.jpg?v=1571355763" },
+  { "id": 5, "titulo": "Los Increibles 2", "genero": "Animación", "anio": 2018, "director": "Brad Bird", "calificacion": 0, "poster": "https://diariodevenusville.com/wp-content/uploads/2018/04/LOS-INCREIBLES-2-poster-2.jpg" },
+  { "id": 6, "titulo": "El Resplandor de una mente sin recuerdos", "genero": "Drama", "anio": 2004, "director": "Michel Gondry", "calificacion": 0, "poster": "https://i.pinimg.com/736x/82/ae/fe/82aefe1684b42ebc5a8650dd8d6c0a84.jpg" },
+  { "id": 7, "titulo": "Rocky", "genero": "Drama", "anio": 1976, "director": "John G. Avildsen", "calificacion": 0, "poster": "https://imgs.search.brave.com/cJUzmhUKrV8x0YrDpHLMkb0ZRXITQVNYABPlY8L_4sg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL2lt/YWdlcy9nL3R0d0FB/ZVN3RXFacGNVSDUv/cy1sOTYwLndlYnA" },
+  { "id": 8, "titulo": "Coraline", "genero": "Animación", "anio": 2009, "director": "Henry Selick", "calificacion": 0, "poster": "https://images.theposterdb.com/prod/public/images/posters/optimized/movies/62526/7Xj66J7V6vriHvHUhmWOv54xtlnE6DNBMGbWh6Qs.webp" },
+  { "id": 9, "titulo": "Proyecto fin del mundo", "genero": "Ciencia ficción", "anio": 2026, "director": "Phil Lord y Christopher Miller", "calificacion": 0, "poster": "https://image.tmdb.org/t/p/original/dZE5KfWxxPVJ5Y5yHrQIXKMA3Bt.jpg" },
+  { "id": 10, "titulo": "Supercool", "genero": "Comedia", "anio": 2007, "director": "Greg Mottola", "calificacion": 0, "poster": "https://image.tmdb.org/t/p/original/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg" },
+  { "id": 11, "titulo": "¿..y dónde están las rubias?", "genero": "Comedia", "anio": 2004, "director": "Keenen Ivory Wayans", "calificacion": 0, "poster": "https://images.theposterdb.com/prod/public/images/posters/optimized/movies/91964/kqMZQBccjZ2EF6ptbW9sj2LrYqpSOxQ8zX0c8puk.webp" },
+  { "id": 12, "titulo": "Yo, robot", "genero": "Ciencia ficción", "anio": 2004, "director": "Alex Proyas", "calificacion": 0, "poster": "https://image.tmdb.org/t/p/original/efwv6F2lGaghjPpBRSINHtoEiZB.jpg" }
+]
+
+
+

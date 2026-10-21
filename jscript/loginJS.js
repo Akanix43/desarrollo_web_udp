@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 localStorage.setItem("usuarioLogeado", "true");
                 
                 setTimeout(function() {
-                    window.location.href = "index.html";
+                    window.location.href = "../index.html";
                 }, 1000);
             
             }
