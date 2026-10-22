@@ -20,202 +20,54 @@
 
         
         <h1 class="mb-4" style="color: white">Catálogo</h1>
-        
-        
-</div>
+        <input type="text" x-model="busqueda" placeholder="Buscar por título..." class="form-control mb-3" style="max-width: 400px;">
 
+        <button type="button" class="btn btn-outline-light mb-3" @click="mostrarAyuda = !mostrarAyuda" x-text="mostrarAyuda ? 'Ocultar ayuda' : 'Mostrar ayuda'"></button>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            
-            <div class="col">
-               
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://filmartgallery.com/cdn/shop/files/Cars-Vintage-Movie-Poster-Original_12367988.jpg?v=1773770100&width=2048" alt="Cars" style="aspect-ratio: 2/3; object-fit: cover;">
-                  
-                    <div class="card-body">
-                    
-                        <h5 class="card-title mb-0">
-                            <a href="../peliculasHTML/cars.html" class="text-decoration-none stretched-link" style="color: white;">Cars</a>
-                        </h5>                  
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://i.pinimg.com/736x/24/e4/a2/24e4a2e65cedbaf56090f15dbed88909.jpg" alt="El silencio de los inocentes" style="aspect-ratio: 2/3; object-fit: cover;">
-                    
-                    <div class="card-body">
-                    
-                        <h5 class="card-title mb-0">
-                            <a href="../peliculasHTML/el-silencio-de-los-inocentes.html" class="text-decoration-none stretched-link" style="color: white;">El silencio de los inocentes</a>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://i.pinimg.com/1200x/0b/34/ce/0b34ce2145b475247577a5d438a199b0.jpg" alt="El silencio de los inocentes" style="aspect-ratio: 2/3; object-fit: cover;">
-                    
-                    <div class="card-body">
-                    
-                        <h5 class="card-title mb-0">
-                            <a href="../peliculasHTML/interestellar.html" class="text-decoration-none stretched-link" style="color: white;">Interestellar</a>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://moviepostermexico.com/cdn/shop/products/la_la_land_ver3_xxlg_540x.jpg?v=1571355763" alt="El silencio de los inocentes" style="aspect-ratio: 2/3; object-fit: cover;">
-                    
-                    <div class="card-body">
-                    
-                        <h5 class="card-title mb-0">
-                            <a href="../peliculasHTML/lalaland.html" class="text-decoration-none stretched-link" style="color: white;">La la land</a>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://diariodevenusville.com/wp-content/uploads/2018/04/LOS-INCREIBLES-2-poster-2.jpg" alt="Los Increibles 2" style="aspect-ratio: 2/3; object-fit: cover;">
-                    
-                    <div class="card-body">
-                    
-                        <h5 class="card-title mb-0">
-                            <a href="../peliculasHTML/los-increibles-2.html" class="text-decoration-none stretched-link" style="color:white;">Los Increibles 2</a>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://i.pinimg.com/736x/82/ae/fe/82aefe1684b42ebc5a8650dd8d6c0a84.jpg" alt="Resplandor de una Mente sin Recuerdos" style="aspect-ratio: 2/3; object-fit: cover;">
-                    
-                    <div class="card-body">
-                    
-                        <h5 class="card-title mb-0">
-                            <a href="../peliculasHTML/resplandor-de-una-mente-sin-recuerdos.html" class="text-decoration-none stretched-link" style="color: white;">El Resplandor de una mente sin recuerdos</a>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://imgs.search.brave.com/cJUzmhUKrV8x0YrDpHLMkb0ZRXITQVNYABPlY8L_4sg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL2lt/YWdlcy9nL3R0d0FB/ZVN3RXFacGNVSDUv/cy1sOTYwLndlYnA" alt="Rocky" style="aspect-ratio: 2/3; object-fit: cover;">
-                    
-                    <div class="card-body">
-                    
-                        <h5 class="card-title mb-0">
-                            <a href="../peliculasHTML/rocky.html" class="text-decoration-none stretched-link" style="color: white;">Rocky</a>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-               
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://images.theposterdb.com/prod/public/images/posters/optimized/movies/62526/7Xj66J7V6vriHvHUhmWOv54xtlnE6DNBMGbWh6Qs.webp" alt="Coraline" >
-                  
-                    <div class="card-body">
-                    
-                        <h5 class="card-title">
-                            <a href="../peliculasHTML/coraline.html" class="text-decoration-none stretched-link" style="color: white;">Coraline</a>
-                        </h5>                  
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-               
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://image.tmdb.org/t/p/original/dZE5KfWxxPVJ5Y5yHrQIXKMA3Bt.jpg" alt="Proyecto fin del mundo" style="aspect-ratio: 2/3; object-fit: cover;">
-                  
-                    <div class="card-body">
-                    
-                        <h5 class="card-title">
-                            <a href="../peliculasHTML/proyecto-fin-del-mundo.html" class="text-decoration-none stretched-link" style="color: white;">Proyecto fin del mundo</a>
-                        </h5>                  
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col">
-               
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://image.tmdb.org/t/p/original/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg" alt="Supercool" style="aspect-ratio: 2/3; object-fit: cover;">
-                  
-                    <div class="card-body">
-                    
-                        <h5 class="card-title">
-                            <a href="../peliculasHTML/supercool.html" class="text-decoration-none stretched-link" style="color: white;">Supercool</a>
-                        </h5>                  
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-               
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://images.theposterdb.com/prod/public/images/posters/optimized/movies/91964/kqMZQBccjZ2EF6ptbW9sj2LrYqpSOxQ8zX0c8puk.webp" alt="¿y...dónde están las rubias?" style="aspect-ratio: 2/3; object-fit: cover;">
-                  
-                    <div class="card-body">
-                    
-                        <h5 class="card-title mb-0">
-                            <a href="../peliculasHTML/donde-estan-las-rubias.html" class="text-decoration-none stretched-link" style="color: white;">¿..y dónde están las rubias?</a>
-                        </h5>                  
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-               
-                <div class="card bg-dark">
-                  
-                    <img class="card-img-top" src="https://image.tmdb.org/t/p/original/efwv6F2lGaghjPpBRSINHtoEiZB.jpg" alt="Yo, robot?" style="aspect-ratio: 2/3; object-fit: cover;">
-                  
-                    <div class="card-body">
-                    
-                        <h5 class="card-title mb-0">
-                            <a href="../peliculasHTML/yo-robot.html" class="text-decoration-none stretched-link" style="color: white;">Yo, robot</a>
-                        </h5>                  
-                    </div>
-                </div>
-            </div>
-
+        <div x-show="mostrarAyuda" class="mb-3" style="color: white; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;">
+            <p>Usa el buscador para filtrar películas por título. Haz clic en cualquier póster para ver el detalle de la película y dejar un comentario.</p>
         </div>
+
+        <p x-show="cargando" style="color: white">Cargando películas...</p>
+        <p x-show="error" style="color: salmon">Ocurrió un error al cargar el catálogo.</p>
+        <p x-show="!cargando && !error && filtradas.length === 0" style="color: white">No se encontraron películas con ese nombre.</p>
+        
+        
+    
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <template x-for="pelicula in filtradas" :key="pelicula.id">
+        <div class="col">
+            <div class="card bg-dark">
+                <img class="card-img-top" :src="pelicula.poster" :alt="pelicula.titulo" style="aspect-ratio: 2/3; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title mb-0">
+                        <a :href="pelicula.pagina" class="text-decoration-none stretched-link" style="color: white;" x-text="pelicula.titulo"></a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </template>
+</div>   
+            
+
+        
     </div>
 </body>
 <script>
 function catalogoApp() {
   return {
     peliculas: [],
+    busqueda: '',
     cargando: true,
     error: false,
+    mostrarAyuda: false,
+    get filtradas() {
+      return this.peliculas.filter(p =>
+        p.titulo.toLowerCase().includes(this.busqueda.toLowerCase())
+      );
+    },
+
     init() {
       fetch('../datos/peliculas.json')
         .then(r => {

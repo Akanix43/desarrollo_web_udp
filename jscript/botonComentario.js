@@ -1,15 +1,16 @@
-document.getElementById("btn-publicar").addEventListener("click", function() {
-    let nombre = document.getElementById("caja-nombre").value;
-    let comentario = document.getElementById("caja-texto").value;
-
-    if(nombre == "" || comentario == "") {
-        alert("Necesita escribir un nombre y un comentario");
+function comentarioForm() {
+  return {
+    nombre: '',
+    comentario: '',
+    estado: '', // '', 'exito' o 'error'
+    enviarComentario() {
+      if (this.nombre.trim() === '' || this.comentario.trim() === '') {
+        this.estado = 'error';
         return;
+      }
+      this.estado = 'exito';
+      this.nombre = '';
+      this.comentario = '';
     }
-    
-    let cajaComentariosAntiguos = document.querySelector(".comentario");
-    cajaComentariosAntiguos.innerHTML += "<br><br><p>" + nombre + "</p><p>" + comentario + "</p>";
-    
-    document.getElementById("caja-nombre").value = "";
-    document.getElementById("caja-texto").value = "";
-});
+  }
+}
