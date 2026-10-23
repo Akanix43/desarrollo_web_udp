@@ -212,10 +212,11 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.bloque-secundario {
+.bloque-secundario { /*Este bloque es EL BLOQUE PRINCIPAL DEL CATALOGO, ORDENA FOTO, MARGEN BLANCO Y TEXTO DE RESUMEN ETC*/
     display: flex;
     gap: 30px;
     margin-bottom:40px;
+    flex-direction: column; 
 }
 
 .poster {
@@ -226,6 +227,7 @@ body {
 .poster img {
     width: 100%;
     border-radius: 8px;
+    margin-right: 5;
 }
 
 .sinopsis {
@@ -263,11 +265,11 @@ flex-direction: column;
 }
 .poster {
 
-width: 140%;
+width: 150%;
 
 max-width: 300px;
 
-margin: 1 auto; 
+margin: 0 auto; 
 
 }
 }
