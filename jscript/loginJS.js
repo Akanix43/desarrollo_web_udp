@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
             }
             else {
                 mensaje.style.color = "red";
-                mensaje.textContent = "Error: Contraseña demasiado corta";
+                mensaje.textContent = "Error: Contraseña demasiado corta o correo inválido";
             }
         }); 
     }
