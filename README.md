@@ -4,7 +4,7 @@ Descripción de proyecto
 
 CritiFilms es una plataforma social de reseñas de películas, inspirada en letterboxd, desarrollada para el curso de desarrollo web sección 01, de la carrera de Ingenieria en informática y Telecomunicaciones de la Universidad Diego Portales.
 
-El sitio permite explorar un catálogo de películas, ver una selección destacada en un carrusel con reseñas de ejemplo provisorias que también se puede ver al navegar al detalle de cada título. En la Tarea 1 el sitio tenía cortas referencias JavaScript y no contenía una base de datos; las reseñas y datos de usuarios se usan como prueba para representar el dominio original del proyecto (red social de críticas de cine), que posteriormente va a ser conectado a un backend en la etapa posterior. En la Tarea 2 se incorporó Alpine.js para manejar el estado y la interacción de la interfaz, y se separaron los datos de las películas en un archivo JSON cargado de forma asíncrona con fetch().
+El sitio permite explorar un catálogo de películas, ver una selección destacada en un carrusel con reseñas de ejemplo provisorias que también se puede ver al navegar al detalle de cada título. En la Tarea 1 el sitio tenía cortas referencias JavaScript y no contenía una base de datos; las reseñas y datos de usuarios se usan como prueba para representar el dominio original del proyecto (red social de críticas de cine), esperando ser conectado a un backend en etapas posteriores. En la Tarea 2 se incorporó Alpine.js para manejar el estado y la interacción de la interfaz, y se separaron los datos de las películas en un archivo JSON cargado de forma asíncrona con fetch().
 
 Tecnologías utilizadas
 HTML5 y CSS3
@@ -84,9 +84,3 @@ El inicio de sesión no implementa autenticación real: solo valida que el corre
 Uso de localStorage
 
 El formulario de inicio de sesión (jscript/loginJS.js) usa localStorage.setItem("usuarioLogeado", "true") al iniciar sesión correctamente. Esto guarda ese valor únicamente en el navegador del usuario que inició sesión, no en el servidor ni en una base de datos, y no implementa autenticación ni seguridad real: solo indica, localmente en ese navegador, que se completó el formulario de inicio de sesión.
-
-
-
-
-
-message.txt                                                                        
