@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +7,58 @@
     <link rel="stylesheet" href="../diseno.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-
 <body>
     <a href="../index.html" style="display: flex; align-items: center; text-decoration: none; color: white; gap: 10px;">
         <img src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/home-page-white-icon.png" alt="Volver al inicio" style="width: 40px; border: none;">
         <span style="font-weight: bold; font-size: 18px;">Inicio</span>
     </a>
+    
     <main class="bloque-principal">
         <div class="bloque-secundario">
             <div class="poster">
                 <img src="https://diariodevenusville.com/wp-content/uploads/2018/04/LOS-INCREIBLES-2-poster-2.jpg" alt="Póster The Incredibles 2">
             </div>
 
-
             <div class="sinopsis">
                 <h2>The Incredibles 2</h2>
-                <p>Vuelve la familia de superhéroes formada por Míster Increíble y Elastigirl junto a sus tres hijos Violet, Dash y Jack-Jack. Esta vez es Helen Parr, la madre del clan, la que debe hacerse cargo del sustento familiar ya que cuenta con una mejor imagen pública que su esposo. A Bob no le quedará otra opción que criar y lidiar con sus hijos, la adolescente Violet, el jovencito Dash y el bebé Jack-Jack, que comenzará a descubrir sus emergentes superpoderes. Cuando surja un nuevo villano, todos ellos junto a Frozone deberán encontrar una manera de trabajar juntos de nuevo, cosa que será más fácil en la teoría que en la práctica, a pesar de que todos sean increíbles. </p>
+                <p>Vuelve la familia de superhéroes formada por Míster Increíble y Elastigirl junto a sus tres hijos Violet, Dash y Jack-Jack. Esta vez es Helen Parr, la madre del clan, la que debe hacerse cargo del sustento familiar ya que cuenta con una mejor imagen pública que su esposo. A Bob no le quedará otra opción que criar y lidiar con sus hijos, la adolescente Violet, el jovencito Dash y el bebé Jack-Jack, que comenzará a descubrir sus emergentes superpoderes. Cuando surja un nuevo villano, todos ellos junto a Frozone deberán encontrar una manera de trabajar juntos de nuevo, cosa que será más fácil en la teoría que en la práctica, a pesar de que todos sean increíbles.</p>
             </div>
-
         </div>
 
-        <div class="bloque-comentarios">
+        <div class="bloque-comentarios" x-data="comentarioForm()">
             <h2>Comentarios</h2>
 
             <div class="comentario">
                 <p>GregorioSilva3</p>
                 <p>La fui a ver con mi nieto y le gusto mucho. Buena pelicula con una entretenida trama</p>
                 <br><br>
+                
                 <p>betoP</p>
                 <p>Aunque deslumbra con un despliegue visual impecable y un diseño retro-futurista de primer nivel, Los Increíbles 2 fracasa en capturar la madurez y audacia de su predecesora al refugiarse en un bucle conformista de gags mecánicos y lugares comunes. La cinta reduce el conflicto familiar a una caricatura de sitcom donde Bob es degradado a un padre torpe y celoso, perdiendo todo el desarrollo emocional consolidado en 2004, mientras que la sobreexplotación de los poderes de Jack-Jack termina por agotar la sorpresa y entorpecer el ritmo narrativo. Peor aún, lo que inicia con Screenslaver como una estimulante crítica a la pasividad moderna y la dependencia mediática se desinfla rápidamente en un giro predecible impulsado por una venganza trillada; el resultado es una secuela técnicamente brillante pero espiritualmente estancada, que prefirió el artificio complaciente antes que correr los riesgos temáticos que convirtieron a la original en una obra maestra.</p>
-
+                
+                <template x-for="(c, i) in comentarios" :key="i">
+                    <div>
+                        <br><br>
+                        <p x-text="c.nombre"></p>
+                        <p x-text="c.texto" style="white-space: pre-wrap;"></p>
+                    </div>
+                </template>
             </div>
-            
-            <div style="margin-top: 30px; border-top: 1px solid black; padding-top: 20px;" x-data="comentarioForm()">
-    <h3>Añadir un comentario</h3>
-    <form @submit.prevent="enviarComentario()">
-        <input type="text" x-model="nombre" placeholder="Tu nombre" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
-        <textarea x-model="comentario" placeholder="Escribe tu comentario..." style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box; min-height: 80px; resize: none;"></textarea>
-        <button type="submit" style="background-color: rgb(38, 30, 153); color: white; padding: 10px; width: 100%; border: none; cursor: pointer; font-weight: bold; border-radius: 6px;">Publicar comentario</button>
-    </form>
-    <p x-show="estado === 'exito'" style="color: lightgreen; margin-top: 10px;">¡Comentario publicado con éxito!</p>
-    <p x-show="estado === 'error'" style="color: salmon; margin-top: 10px;">Debes escribir tu nombre y un comentario antes de publicar.</p>
-</div>
-</div>
+
+            <div style="margin-top: 30px; border-top: 1px solid black; padding-top: 20px;">
+                <h3>Añadir un comentario</h3>
+                <form @submit.prevent="enviarComentario()">
+                    <input type="text" x-model="nombre" placeholder="Tu nombre" maxlength="40" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
+                    <textarea x-model="comentario" placeholder="Escribe tu comentario..." maxlength="1000" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box; min-height: 80px; resize: none;"></textarea>
+                    <button type="submit" style="background-color: rgb(38, 30, 153); color: white; padding: 10px; width: 100%; border: none; cursor: pointer; font-weight: bold; border-radius: 6px;">Publicar comentario</button>
+                </form>
+                
+                <p x-show="estado === 'exito'" style="display: none; color: lightgreen; margin-top: 10px;">¡Comentario publicado con éxito!</p>
+                <p x-show="estado === 'error'" style="display: none; color: salmon; margin-top: 10px;">Debes escribir tu nombre y un comentario antes de publicar.</p>
+            </div>
+        </div>
     </main>
+    
     <script src="../jscript/botonComentario.js"></script>
 </body>
-
 </html>

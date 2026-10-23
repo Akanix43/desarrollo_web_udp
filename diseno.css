@@ -261,17 +261,18 @@ body {
 flex-direction: column; 
 
 }
-}
-
 .poster {
 
-width: 100%;
+width: 140%;
 
 max-width: 300px;
 
-margin: 0 auto; 
+margin: 1 auto; 
 
 }
+}
+
+
 /*catalogo*/
 .c_peli {
     width: 220px;

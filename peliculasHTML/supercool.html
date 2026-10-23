@@ -28,30 +28,35 @@
 
         </div>
 
-        <div class="bloque-comentarios">
-            <h2>Comentarios</h2>
+        <div class="bloque-comentarios" x-data="comentarioForm()">
+    <h2>Comentarios</h2>
 
-            <div class="comentario">
-                <p>Alexei_U</p>
-                <p>WOW que pelicula tan graciosa me encanta</p>
+    <div class="comentario">
+        <p>Alexei_U</p>
+        <p>WOW que pelicula tan graciosa me encanta</p>
+        <br><br>
+        <p>Jaime_Gamer</p>
+        <p>Que jovenes tan vulgares, me encanta</p>
+        <template x-for="(c, i) in comentarios" :key="i">
+            <div>
                 <br><br>
-                <p>Jaime_Gamer</p>
-                <p>Que jovenes tan vulgares, me encanta</p>
-            
-
+                <p x-text="c.nombre"></p>
+                <p x-text="c.texto" style="white-space: pre-wrap;"></p>
             </div>
-            
-        <div style="margin-top: 30px; border-top: 1px solid black; padding-top: 20px;" x-data="comentarioForm()">
-            <h3>Añadir un comentario</h3>
-            <form @submit.prevent="enviarComentario()">
-                <input type="text" x-model="nombre" placeholder="Tu nombre" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
-                <textarea x-model="comentario" placeholder="Escribe tu comentario..." style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box; min-height: 80px; resize: none;"></textarea>
-                <button type="submit" style="background-color: rgb(38, 30, 153); color: white; padding: 10px; width: 100%; border: none; cursor: pointer; font-weight: bold; border-radius: 6px;">Publicar comentario</button>
-            </form>
-            <p x-show="estado === 'exito'" style="color: lightgreen; margin-top: 10px;">¡Comentario publicado con éxito!</p>
-            <p x-show="estado === 'error'" style="color: salmon; margin-top: 10px;">Debes escribir tu nombre y un comentario antes de publicar.</p>
-        </div>
-        </div>
+        </template>
+    </div>
+
+    <div style="margin-top: 30px; border-top: 1px solid black; padding-top: 20px;">
+        <h3>Añadir un comentario</h3>
+        <form @submit.prevent="enviarComentario()">
+            <input type="text" x-model="nombre" placeholder="Tu nombre" maxlength="40" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
+            <textarea x-model="comentario" placeholder="Escribe tu comentario..." maxlength="1000" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box; min-height: 80px; resize: none;"></textarea>
+            <button type="submit" style="background-color: rgb(38, 30, 153); color: white; padding: 10px; width: 100%; border: none; cursor: pointer; font-weight: bold; border-radius: 6px;">Publicar comentario</button>
+        </form>
+        <p x-show="estado === 'exito'" style="display: none; color: lightgreen; margin-top: 10px;">¡Comentario publicado con éxito!</p>
+        <p x-show="estado === 'error'" style="display: none; color: salmon; margin-top: 10px;">Debes escribir tu nombre y un comentario antes de publicar.</p>
+    </div>
+</div>
     </main>
     <script src="../jscript/botonComentario.js"></script>
 </body>

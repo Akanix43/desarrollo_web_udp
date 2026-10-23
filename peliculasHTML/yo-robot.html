@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,52 +7,58 @@
     <link rel="stylesheet" href="../diseno.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-
 <body>
     <a href="../index.html" style="display: flex; align-items: center; text-decoration: none; color: white; gap: 10px;">
         <img src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/home-page-white-icon.png" alt="Volver al inicio" style="width: 40px; border: none;">
         <span style="font-weight: bold; font-size: 18px;">Inicio</span>
     </a>
+    
     <main class="bloque-principal">
         <div class="bloque-secundario">
             <div class="poster">
                 <img src="https://image.tmdb.org/t/p/original/efwv6F2lGaghjPpBRSINHtoEiZB.jpg" alt="Yo, robot">
             </div>
 
-
             <div class="sinopsis">
                 <h2>Yo, robot</h2>
                 <p>Yo, Robot (I, Robot, 2004) es un thriller de ciencia ficción ambientado en un futuro cercano donde la robótica y la Inteligencia Artificial forman parte fundamental de la vida cotidiana, rigiéndose estrictamente por las Tres Leyes de la Robótica para garantizar la seguridad humana. La trama sigue al detective Del Spooner, un policía cínico y profundamente desconfiado de las máquinas, quien es asignado para investigar la aparente y extraña muerte del doctor Alfred Lanning, el brillante cofundador de US Robotics. A medida que Spooner profundiza en el caso con la ayuda de la psicóloga Susan Calvin, comienza a sospechar que el responsable no es un error humano, sino Sonny, un androide avanzado capaz de sentir emociones y evadir las mismísimas leyes de su programación, destapando una conspiración tecnológica a gran escala que amenaza el futuro y el libre albedrío de toda la humanidad.</p>
             </div>
-
         </div>
 
-        <div class="bloque-comentarios">
+        <div class="bloque-comentarios" x-data="comentarioForm()">
             <h2>Comentarios</h2>
 
             <div class="comentario">
                 <p>Tia_turbina</p>
                 <p>Me encantaron los robots</p>
                 <br><br>
+                
                 <p>Miguel_durito_de_PS4</p>
                 <p>Pensar que así será en un futuro no muy lejano</p>
-            
-
+                
+                <template x-for="(c, i) in comentarios" :key="i">
+                    <div>
+                        <br><br>
+                        <p x-text="c.nombre"></p>
+                        <p x-text="c.texto" style="white-space: pre-wrap;"></p>
+                    </div>
+                </template>
             </div>
-            
-            <div style="margin-top: 30px; border-top: 1px solid black; padding-top: 20px;" x-data="comentarioForm()">
+
+            <div style="margin-top: 30px; border-top: 1px solid black; padding-top: 20px;">
                 <h3>Añadir un comentario</h3>
                 <form @submit.prevent="enviarComentario()">
-                    <input type="text" x-model="nombre" placeholder="Tu nombre" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
-                    <textarea x-model="comentario" placeholder="Escribe tu comentario..." style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box; min-height: 80px; resize: none;"></textarea>
+                    <input type="text" x-model="nombre" placeholder="Tu nombre" maxlength="40" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
+                    <textarea x-model="comentario" placeholder="Escribe tu comentario..." maxlength="1000" style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box; min-height: 80px; resize: none;"></textarea>
                     <button type="submit" style="background-color: rgb(38, 30, 153); color: white; padding: 10px; width: 100%; border: none; cursor: pointer; font-weight: bold; border-radius: 6px;">Publicar comentario</button>
                 </form>
-                <p x-show="estado === 'exito'" style="color: lightgreen; margin-top: 10px;">¡Comentario publicado con éxito!</p>
-                <p x-show="estado === 'error'" style="color: salmon; margin-top: 10px;">Debes escribir tu nombre y un comentario antes de publicar.</p>
+                
+                <p x-show="estado === 'exito'" style="display: none; color: lightgreen; margin-top: 10px;">¡Comentario publicado con éxito!</p>
+                <p x-show="estado === 'error'" style="display: none; color: salmon; margin-top: 10px;">Debes escribir tu nombre y un comentario antes de publicar.</p>
             </div>
         </div>
     </main>
+    
     <script src="../jscript/botonComentario.js"></script>
 </body>
-
 </html>
