@@ -29,8 +29,8 @@
         </div>
 
         <p x-show="cargando" style="color: white">Cargando películas...</p>
-        <p x-show="error" style="color: salmon">Ocurrió un error al cargar el catálogo.</p>
-        <p x-show="!cargando && !error && filtradas.length === 0" style="color: white">No se encontraron películas con ese nombre.</p>
+        <p x-show="error" style="color: salmon; display: none;">Ocurrió un error al cargar el catálogo.</p>
+        <p x-show="!cargando && !error && filtradas.length === 0" style="color: white; display: none;">No se encontraron películas con ese nombre.</p>
         
         
     
