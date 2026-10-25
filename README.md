@@ -71,8 +71,8 @@ Instrucciones para comprobar el estado de error
 
 Para forzar el error de carga del catálogo, renombrar temporalmente datos/peliculas.json (o cambiar la ruta del fetch en catalogo.html a un nombre inexistente) y volver a cargar principalHTML/catalogo.html: debe aparecer el mensaje "Ocurrió un error al cargar el catálogo." en vez del listado.
 
-Dirección pública de despliegue: 54.86.217.12
-Datos: http://54.86.217.12/datos/peliculas.json
+Dirección pública de despliegue: 34.200.170.200
+Datos: http://34.200.170.200/datos/peliculas.json
 
 Limitaciones conocidas
 
